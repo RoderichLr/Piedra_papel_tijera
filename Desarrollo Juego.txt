@@ -1,0 +1,19 @@
+Requerimientos del Juego
+
+1. Crear un juego de Piedra Papel o Tijeras
+utilizando Html, Css, JS.
+
+2. Debe ser para 2 jugadores.
+3. Define el ganador basado en la regla normal del juego
+	- Piedra vence a Tijeras
+	- Tijeras vence a Papel
+	- Papel vence a Piedra
+	- Si eligen el mismo empatan
+
+4. Se un juego de 3 rondas donde el que gane mas veces
+es el campeon.
+
+5. Puedan escribir sus nombres los jugadores.
+6. Al finalizar se muestra el nombre del campeon.
+7. Si empatan entonces se muestra empate y ya.
+

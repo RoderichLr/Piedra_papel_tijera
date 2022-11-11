@@ -1,0 +1,160 @@
+
+body{
+    min-height: 100vh; 
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(rgb(58, 75, 224), rgb(32, 123, 77));
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.registro{
+    font-size: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    height: 230px;
+    color: rgb(247, 64, 85);
+}
+
+input{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+ 
+}
+
+::placeholder{
+    color:  rgb(60, 60, 60);
+}
+
+.botonInc{
+    display: flex;
+    margin-top: 50px;
+    border: none;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-weight: bolder;
+    color:rgb(42, 41, 41);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    background: rgb(113, 221, 196);
+    background: linear-gradient(rgb(75, 96, 236),rgb(51, 215, 166));
+}
+.botones{
+    display: flex;
+    margin-top: 20px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 100%;
+    background: rgb(113, 221, 196);
+    background: linear-gradient(rgb(181, 178, 182),rgb(51, 215, 166));
+}
+#resultados{
+    display: flexbox;
+    justify-content: center;
+text-align: center;
+padding: 20px;
+}
+.botonesFinal{
+    margin-top: 115px;
+}
+.ganadorRondas{
+    margin-top: 150px;
+    font-size: x-large;
+}
+
+.bordeBtn1{
+    margin-top: 30px;
+    padding-bottom: 2px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    text-decoration: none;
+    width: auto;
+    height: 20px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid  rgb(192, 203, 35);
+}
+.bordeBtn2{
+    display: flex;
+    border: none;
+    padding-bottom: 2px;
+    justify-content: center;
+    text-decoration: none;
+    width: auto;
+    height: 20px;
+    border-bottom: 2px solid  rgb(192, 203, 35);
+}
+.cajacentro {
+    display: flex;
+    justify-content:center;
+    margin: 2px;
+    width: 300px;
+    height:500px;
+    border-radius: 20px;
+    margin-top: 100px;
+    background-color: rgb(230, 248, 233);
+    border: 2px solid  rgb(171, 159, 21);
+    box-shadow: 15px 15px 15px #1d383d;
+}
+.invisible{
+    display: none;
+}
+.visible{
+    display: block;
+}
+#contadorRonda{
+font-size: 40px;
+
+}
+
+.marcador{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 10px;
+
+    
+}
+
+
+.seleccion{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 5px 5px 5px;
+
+}
+
+
+.seleccion a:hover{
+    border-radius: 24px;
+    box-shadow: 1px 2px 5px #232424;
+}
+.iconos{
+    margin-top: 60px;
+}
+.seleccion a img{
+
+    padding: auto;
+    height: 100%;
+    width: 100%;
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/img/">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Juega Ahora</title>
+
+    <script defer src="/js/app.js"></script>
+</head>
+<body>
+    <main id="contenedor">
+        <div class="cajacentro">
+            <!-- Panel para obtener los nombres de los jugadores y dar inicio al juego. -->
+            <section id="inicio" class="visible">
+                <div class="registro">REGISTRATE</div>
+                
+                <div class="bordeBtn1">
+                    <input   type="text" id="jugador1"  required maxlength="10" autocomplete="off"  placeholder="Nombre del Jugador 1°"  autofocus>
+                </div>
+                <div  class="bordeBtn2" >
+                <input type="text" id="jugador2"   required maxlength="10" autocomplete="off" placeholder="Nombre del Jugador 2°"   >
+                </div> <input type="submit" value="Inicio" onclick="iniciar()"   id="botonInicio"  class="botonInc" > 
+            </section>
+            <!-- Panel para la ejecucion de las rondas del juego. -->
+            <section id="rondas" class="invisible">
+                <h2 id="contadorRonda">Ronda...</h2>
+                
+                <div class="marcador" >
+                    <div><label for="pJ1" id="puntosJ1"> puntaje jugador 1:</label></div>
+                    <div><label for="pJ2" id="puntosJ2"> puntaje jugador 2:</label></div>
+                </div>
+                <div class="iconos" > <article id="respuestaJ1" class="invisible">
+                    <h3 id="tituloJ1">Turno de</h3>
+                    <div class="seleccion">
+                        <a onclick="seleccion('piedra',1)"><img src="/img/piedra.png" alt="Piedra"></a>
+                        <a onclick="seleccion('papel',1)"><img src="/img/papel.png" alt="Papel"></a>
+                        <a onclick="seleccion('tijera',1)"><img src="/img/tijeras.png" alt="Tijera"></a>
+                    </div>                   
+                    </article>
+                    <article id="respuestaJ2" class="invisible" >
+                    <h3 id="tituloJ2">Turno de</h3>
+                    <div class="seleccion">
+                        <a onclick="seleccion('piedra',2)"><img src="/img/piedra.png" alt="Piedra"></a>
+                        <a onclick="seleccion('papel',2)"><img src="/img/papel.png" alt="Papel"></a>
+                        <a onclick="seleccion('tijera',2)"><img src="/img/tijeras.png" alt="Tijera"></a>
+                        
+                    </div> </article>
+                </div>
+            </section>
+            <!-- Muestra el ganador de cada ronda y del juego -->
+            <section id="resultados" class="invisible">
+                <h2 id="contadorRondaRes">Ronda...</h2>
+                <div class="ganadorRondas">
+                    <h4 id="ganador">Ganador....</h4>
+                </div>
+                <div class="botonesFinal">
+                <button class="botones" id="empezar" onclick="nuevaRonda()">Otra ronda</button>
+                <div class="ultimoBoton" >
+                    <button class="botones" id="otros" onclick="nuevoInicio()" class="invisible">Ir al inicio</button>
+                </div>
+                </div>
+            </section> 
+        </div> 
+    </main> 
+</body>
+</html>
